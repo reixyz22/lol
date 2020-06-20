@@ -62,7 +62,7 @@ client.on('message', message => {
         { users[0 + count] = message.author.username
          ping[0 + count] = message.author
          count = count + 1
-         message.channel.send("You have been added the the queue.") } 
+         message.channel.send("You have been added to the queue.") } 
 // !r
      else if(message.content.startsWith(`${prefix}r`))
          if (ping.includes(message.author)) {
@@ -79,7 +79,7 @@ client.on('message', message => {
      //play game if more than two people 
         if (count > 1)
             {if (countgame == count -1 ) {
-              message.channel.send("The queue is being shuffled.")
+              message.channel.send("**The queue is being shuffled.**")
               shuffle(xrandomindex)
               shuffleassign(ping)
               shuffleassign(users)
@@ -88,7 +88,7 @@ client.on('message', message => {
           countgame = countgame +1
           msg = count - countgame 
         }
-     else message.channel.send("Too few players to start the game")
+     else message.channel.send("**Too few players to start the game.**")
 //!s
      else if(message.content.startsWith(`${prefix}s`))    
      {  if (count > 1) {
@@ -105,7 +105,7 @@ client.on('message', message => {
          //entire !n command again (following !s)
          if (count > 1) {
             if (countgame == count -1 ) {
-                message.channel.send("The queue is being shuffled.")
+                message.channel.send("**The queue is being shuffled.**")
                 shuffle(xrandomindex)
                 shuffleassign(ping)
                 shuffleassign(users)
@@ -114,8 +114,8 @@ client.on('message', message => {
                 countgame = countgame +1
                 msg = count - countgame
             }
-         else message.channel.send("Too few players to start the game.") }
-         else message.channel.send("Too few players to start the game.")  
+         else message.channel.send("**Too few players to start the game.**") }
+         else message.channel.send("**Too few players to start the game.**")  
         }
 //!d
      else if(message.content.startsWith(`${prefix}d`))     
