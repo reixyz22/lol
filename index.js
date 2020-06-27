@@ -119,9 +119,16 @@ client.on('message', message => {
         }
 //!d
      else if(message.content.startsWith(`${prefix}d`))     
-     {message.channel.send("The current queue is :")
+      if (count > 1)
+            {if (countgame == count -1 ) {
+      message.channel.send("The current queue is :")
       message.channel.send(users) 
-      message.channel.send(count + " Players currently in queue.\n " + msg + " T/D Remaining untill next randomization.")
+      message.channel.send(count + " Players currently in queue.\n" + msg + " T/D Remaining untill next randomization.")
+            }
+     else if (count = 1)
+     {message.channel.send(users) }
+     else {        
+         message.channel.send("**The game is not currently in progress.**") }
     }
 //!bug
       else if(message.content.startsWith(`${prefix}bug`)) 
