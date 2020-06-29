@@ -119,7 +119,7 @@ client.on('message', message => {
         }
 //!d
      else if(message.content.startsWith(`${prefix}d`))     
-         {message.channel.send("**The current queue is :**")
+         {message.channel.send("**The current queue is:**")
       message.channel.send(users) 
       message.channel.send(count + " Players currently in queue.\n" + msg + " T/D Remaining untill next randomization.")
     }
@@ -132,6 +132,8 @@ client.on('message', message => {
         {message.channel.send("**The queue has been purged.**")        
         users = []
         ping = [] 
+        count = 0 
+        msg = 0
       }
 })
 
