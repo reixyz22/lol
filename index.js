@@ -15,7 +15,6 @@ function shuffle(array) {
     var currentIndex = ping.length -1, temporaryValue, randomIndex
   
     // it is what it is
-    array[0]=0
     while (0 !== currentIndex) {
       array[currentIndex] = currentIndex;
       currentIndex -= 1;
