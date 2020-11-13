@@ -19,6 +19,7 @@ function shuffle(array) {
       array[currentIndex] = currentIndex;
       currentIndex -= 1;
     }
+    var currentIndex = ping.length -1, temporaryValue, randomIndex
    //copy/pasted shuffle array function, used to make one random index-- copy/paste starts here
     // While there remain elements to shuffle...
     while (0 !== currentIndex) {
