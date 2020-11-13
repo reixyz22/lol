@@ -84,7 +84,7 @@ client.on('message', message => {
               shuffleassign(ping)
               shuffleassign(users)
               countgame = 0 
-              var xrandomindex= []} 
+              xrandomindex= []} 
               
           message.channel.send ((ping)[countgame] + " is currently asking " + (ping)[countgame + 1] )
           countgame = countgame +1
